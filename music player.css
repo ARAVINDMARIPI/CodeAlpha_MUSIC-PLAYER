@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.player-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.categories button {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+.categories button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    background: #eee;
+    border-radius: 5px;
+}
+
+li:hover {
+    background: #ddd;
+}
+
+.controls {
+    margin-top: 15px;
+}
+
+.controls button {
+    font-size: 18px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
