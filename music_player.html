@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="player-container">
+        <h1>🎵 Web Music Player</h1>
+
+        <input type="text" id="search" placeholder="Search songs..." onkeyup="searchSongs()">
+
+        <div class="categories">
+            <button onclick="filterSongs('all')">All</button>
+            <button onclick="filterSongs('pop')">Pop</button>
+            <button onclick="filterSongs('rock')">Rock</button>
+            <button onclick="filterSongs('jazz')">Jazz</button>
+        </div>
+
+        <ul id="playlist">
+            <li data-src="/home/aravind/Music/songs." data-genre="pop">Song 1 - Pop</li>
+            <li data-src="songs.song2.mp3" data-genre="rock">Song 2 - Rock</li>
+            <li data-src="songs.song3.mp3" data-genre="jazz">Song 3 - Jazz</li>
+            <li data-src="songs.song4.mp3" data-genre="pop">Song 4 - Pop</li>
+        </ul>
+
+        <audio id="audioPlayer" controls></audio>
+
+        <div class="controls">
+            <button onclick="playPause()">▶️/⏸️</button>
+            <button onclick="skip()">⏭️</button>
+            <input type="range" min="0" max="1" step="0.1" oninput="setVolume(this.value)">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
